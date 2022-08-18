@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>MyDabba.com | Home</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="heading">
+        <img class="logo" src="assets\logo.png" alt="img" />
+        <p>MyDabba</p>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="index.php">Home</a>
+          </li>
+          <li>
+            <div class="vanishlink"><a href="#footer">About Us</a></div>
+          </li>
+          <li>
+            <div class="vanishlink"><a href="#footer">Contact us</a></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="bod">
+      <div class="intro">
+        <div class="leftintro">
+          <img class="img1" src="assets/tiifin2.2.jpg" />
+        </div>
+        <div class="rightintro">
+          <div class="log_sign">
+            <div class="login"><a href="login.php">Login</a></div>
+            <div class="signin"><a href="signup.php">Sign up</a></div>
+            <div class="logout">
+              <a href="index.php?logout=true">Log Out</a>
+            </div>
+          </div>
+          <div class="righttext">
+            <div class="rightheading">
+              <h3>Order tiffin delivery</h3>
+              <h3>you'll love</h3>
+            </div>
+            <div class="rightsearch">
+              <form action="food-search.php" method="POST">
+                <input type="text" name="search" placeholder="Search" />
+                <br />
+                <button type="button" id="searchbtn">
+                  <a href="food-search.php">Search</a>
+                </button>
+                <button type="button" id="searchbtn">
+                  <a href="addfood.php">Add Food</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menuscroll">
+        <div class="cards-wrapper">
+          <a href="order.php?food_id=14">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_img">
+                  <img class="card_img" src="assets/download.jpg" />
+                </div>
+              </div>
+              <div class="card_bottom">
+                <h5>Meal 1</h5>
+                <h6>Info</h6>
+                <div class="card_bottom_text"></div>
+              </div>
+            </div>
+          </a>
+          <a href="order.php?food_id=7">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_img">
+                  <img class="card_img" src="assets/download2.jpg" />
+                </div>
+              </div>
+              <div class="card_bottom">
+                <h5>Meal 2</h5>
+                <h6>Info</h6>
+                <div class="card_bottom_text"></div>
+              </div>
+            </div>
+          </a>
+          <a href="order.php?food_id=15">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_img">
+                  <img class="card_img" src="assets/download3.jpg" />
+                </div>
+              </div>
+              <div class="card_bottom">
+                <h5>Meal 3</h5>
+                <h6>Info</h6>
+                <div class="card_bottom_text"></div>
+              </div>
+            </div>
+          </a>
+          <a href="order.php?food_id=16">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_img">
+                  <img class="card_img" src="assets/download4.jpg" />
+                </div>
+              </div>
+              <div class="card_bottom">
+                <h5>Meal 4</h5>
+                <h6>Info</h6>
+                <div class="card_bottom_text"></div>
+              </div>
+            </div>
+          </a>
+          <a href="order.php?food_id=17">
+            <div class="card">
+              <div class="card_top">
+                <div class="card_img">
+                  <img class="card_img" src="assets/download5.jpg" />
+                </div>
+              </div>
+              <div class="card_bottom">
+                <h5>Meal 5</h5>
+                <h6>Info</h6>
+                <div class="card_bottom_text"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="food.php" class="menu_link">
+        <div class="menu_button">MENU</div>
+      </a>
+      <div class="joinchef">
+        <div class="joinchef_left">
+          <h3>Become a chef</h3>
+          <h4>Cook food at home and deliver...</h4>
+          <h4>Become an entrepreneur!!!</h4>
+          <a href="chefregistration.php"
+            ><button type="button" id="reg_chef_btn">Register now</button></a
+          >
+        </div>
+        <div class="joinchef_right">
+          <img class="img2" src="assets/gettyimages-1263972276-612x612.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="aboutus">
+        <div class="aboutpara">
+          <p>
+            We allow home cooks to become solopreneurs of the future by giving
+            them a platform to express their cooking expertise and create a
+            brand for themselves.
+          </p>
+          <p>Order fresh tiffin and meals to your office and workplaces.</p>
+        </div>
+        <div class="abouthead">About Us</div>
+      </div>
+      <div class="contactus">
+        <div class="contact_top">
+          <div class="text">
+            <p>Contact Us</p>
+          </div>
+          <div class="socialmed">
+            <a href="https://www.instagram.com/"
+              ><img src="assets/download__8_-removebg-preview.png" alt=""
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img src="assets/download__7_-removebg-preview.png" alt=""
+            /></a>
+            <a href="https://twitter.com/?lang=en"
+              ><img src="assets/download__6_-removebg-preview.png" alt=""
+            /></a>
+            <a href="https://gmail.com/"
+              ><img src="assets/download-removebg-preview (1).png" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <hr class="footer_line" />
+
+        <div class="contact_bottom">
+          <div class="copyright">@2021 MyDabba.com All rights reserved</div>
+          <div class="userpol">
+            <div class="terms"><a href="#">Terms of use</a></div>
+            <div class="privacy"><a href="#">Privacy policy</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

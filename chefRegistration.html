@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="chefRegistration.css" />
+
+  <title>Chef Registration</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="heading">
+      <img class="logo" src="assets\logo.png" alt="img" />
+      <p>MyDabba</p>
+    </div>
+    <nav>
+      <ul class="nav_links">
+        <li>
+          <a href="index.php">Home</a>
+        </li>
+        <li>
+          <div class="vanishlink"><a href="#footer">About Us</a></div>
+        </li>
+        <li>
+          <div class="vanishlink"><a href="#footer">Contact us</a></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1 class="text-center" style="padding-top: 2.5rem">
+    REGISTER AS A CHEF
+  </h1>
+
+  <p class="para">
+    Register now to become a part of our family as a home chef. We aim at
+    empowering home chefs and promoting home businesses.
+    <br />
+    To earn money with your home cooking, fill the form given below:
+  </p>
+  <div class="row g-3">
+    <div class="col-md-5">
+      <img src="assets\food.jpg" alt="food pic" class="pic_food" />
+    </div>
+    <div class="col-md-7">
+      <form action="chefRegistration.html" method="post">
+        <div class="col-sm-12 col-lg-10 form_part">
+          <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+            style="border-color: #ffffff; border-bottom: 1px #eee solid" required />
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <input type="email" class="form-control" id="email" placeholder="Email" name="email"
+            style="border-color: #ffffff; border-bottom: 1px #eee solid" required />
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone"
+            style="border-color: #ffffff; border-bottom: 1px #eee solid" required />
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <input type="text" class="form-control" id="address" placeholder="Flat number/Apartment/landmark"
+            name="address" style="border-color: #ffffff; border-bottom: 1px #eee solid" required />
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <select id="country" class="form-control" style="border-color: #ffffff; border-bottom: 1px #eee solid">
+            <option value="">Country</option>
+            <option value="India">India</option>
+          </select>
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <select id="state" class="form-control" style="border-color: #ffffff; border-bottom: 1px #eee solid">
+            <option value="">State</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Punjab">Punjab</option>
+          </select>
+        </div>
+
+        <div class="col-sm-12 col-lg-10 form_part">
+          <select id="state" class="form-control" style="border-color: #ffffff; border-bottom: 1px #eee solid">
+            <option value="">Select Veg/Non-veg</option>
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-Veg</option>
+          </select>
+        </div>
+
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="aboutus">
+      <div class="aboutpara">
+        <p>We allow home cooks to become solopreneurs of the future by giving them a platform to express their cooking
+          expertise and create a brand for themselves.
+        </p>
+        <p>
+          Order fresh tiffin and meals to your office and workplaces.
+        </p>
+      </div>
+      <div class="abouthead">About Us</div>
+    </div>
+    <div class="contactus">
+      <div class="contact_top">
+        <div class="text">
+          <p>Contact Us</p>
+        </div>
+        <div class="socialmed">
+          <a href="https://www.instagram.com/"><img src="assets/download__8_-removebg-preview.png" alt="" /></a>
+          <a href="https://www.facebook.com/"><img src="assets/download__7_-removebg-preview.png" alt="" /></a>
+          <a href="https://twitter.com/?lang=en"><img src="assets/download__6_-removebg-preview.png" alt="" /></a>
+          <a href="https://gmail.com/"><img src="assets/download-removebg-preview (1).png" alt="" /></a>
+        </div>
+      </div>
+
+      <hr class="footer_line" />
+
+      <div class="contact_bottom">
+        <div class="copyright">@2021 MyDabba.com All rights reserved</div>
+        <div class="userpol">
+          <div class="terms"><a href="#">Terms of use</a></div>
+          <div class="privacy"><a href="#">Privacy policy</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

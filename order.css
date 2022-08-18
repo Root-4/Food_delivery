@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #36286b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  height: 10vh;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heading p,
+logo {
+  padding: 9px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.nav_links {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav_links li:hover {
+  font-weight: 510;
+  transform: translate(0, -2px);
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav_links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.bg-light {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  border: 0.5rem solid black;
+}
+
+.container-form {
+  background: #01b8ff;
+  background: -webkit-radial-gradient(right, #01b8ff, #ffffff);
+  background: -moz-radial-gradient(right, #01b8ff, #ffffff);
+  background: radial-gradient(to left, #01b8ff, #ffffff);
+  border-radius: 20px;
+  border: 0.25rem solid black;
+  padding: 5rem;
+  width: 55%;
+  margin: 3rem;
+}
+.container-food {
+  background: #01b8ff;
+  background: -webkit-radial-gradient(right, #01b8ff, #ffffff);
+  background: -moz-radial-gradient(right, #01b8ff, #ffffff);
+  background: radial-gradient(to left, #01b8ff, #ffffff);
+  border-radius: 20px;
+  border: 0.25rem solid black;
+  padding: 5rem;
+  width: 30%;
+  margin: 3rem;
+  height: 10%;
+  /* margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem; */
+}
+
+.container-header {
+  text-align: left;
+  margin-left: 0;
+}
+
+.vec {
+  width: 16%;
+  float: left;
+  margin-top: 0px;
+  margin-left: 15%;
+}
+
+.header {
+  margin-left: 15rem;
+}
+
+.contactus {
+  background-color: #0a81ff;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: 25vh;
+}
+
+.contact_top {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 50%;
+}
+
+.text {
+  padding: 15px;
+}
+
+.socialmed a img {
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.socialmed a img:hover {
+  transform: translate(0, -2px);
+}
+hr.footer_line {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border: 0.8px solid white;
+}
+.contact_bottom {
+  padding: 0 60px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.copyright {
+  font-size: 12px;
+}
+.userpol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.terms {
+  padding: 10px;
+}
+.terms a {
+  text-decoration: none;
+  color: white;
+}
+.terms a:hover {
+  text-decoration: underline;
+}
+.privacy {
+  padding: 10px;
+}
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+.privacy a:hover {
+  text-decoration: underline;
+}

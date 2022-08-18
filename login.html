@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+  <title>MyDabba.com | Login</title>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="heading">
+      <img class="logo" src="assets\logo.png" alt="img">
+      <p>MyDabba</p>
+    </div>
+    <nav>
+      <ul class="nav_links">
+        <li>
+          <a href="index.php">Home</a>
+        </li>
+        <li>
+          <div class="vanishlink"><a href="#footer">About Us</a></div>
+        </li>
+        <li>
+          <div class="vanishlink"><a href="#footer">Contact us</a></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="body">
+    <div class="login">
+      <h2>Login</h2><br>
+      <form id="login" method="POST" action="login.php">
+        <label id="uname_label">Username</label>
+        <input type="text" name="uname" id="uname" placeholder="">
+        <br>
+        <label id="pass_label">Password</label>
+        <input type="password" name="pass" id="pass" placeholder=""">
+                    <br>
+                    <input type=" button" name="log" id="log" value="Sign up">
+        <br>
+        <a id="noacc" href="signup.php">Don't have an account?</a>
+      </form>
+    </div>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </div>
+
+
+  <div id="footer">
+    <div class="aboutus">
+      <div class="aboutpara">
+        <p>We allow home cooks to become solopreneurs of the future by giving them a platform to express their cooking
+          expertise and create a brand for themselves.
+        </p>
+        <p>
+          Order fresh tiffin and meals to your office and workplaces.
+        </p>
+      </div>
+      <div class="abouthead">About Us</div>
+    </div>
+    <div class="contactus">
+      <div class="contact_top">
+        <div class="text">
+          <p>Contact Us</p>
+        </div>
+        <div class="socialmed">
+          <a href="https://www.instagram.com/"><img src="assets/download__8_-removebg-preview.png" alt="" /></a>
+          <a href="https://www.facebook.com/"><img src="assets/download__7_-removebg-preview.png" alt="" /></a>
+          <a href="https://twitter.com/?lang=en"><img src="assets/download__6_-removebg-preview.png" alt="" /></a>
+          <a href="https://gmail.com/"><img src="assets/download-removebg-preview (1).png" alt="" /></a>
+        </div>
+      </div>
+
+      <hr class="footer_line" />
+
+      <div class="contact_bottom">
+        <div class="copyright">@2021 MyDabba.com All rights reserved</div>
+        <div class="userpol">
+          <div class="terms"><a href="#">Terms of use</a></div>
+          <div class="privacy"><a href="#">Privacy policy</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="jQuery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#log').click(function (e) {
+        var valid = this.form.checkValidity();
+        if (valid) {
+          var uname = $('#uname').val();
+          var password = $('#pass').val();
+          e.preventDefault();
+          $.ajax({
+            type: 'POST',
+            url: 'isLogin.php',
+            data: { uname: uname, password: password },
+            success: function (data) {
+              if ($.trim(data) === "1") {
+                Swal.fire(
+                  'Logged in',
+                  'welcome',
+                  'success'
+                )
+                // setTimeout(window.location.replace("index.php"), 3000);
+                setTimeout(window.location.replace("index.php"), 3000);
+              }
+            },
+            error: function (data) {
+              Swal.fire(
+                'Not Logged in',
+                'Error in logging in',
+                'error'
+              )
+            }
+          });
+        }
+        else
+          alert('Non matching details');
+      });
+    });
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

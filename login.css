@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500 &display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .vanishlink {
+    display: none;
+  }
+}
+/*navigation bar*/
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #36286b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 5%;
+  height: 10vh;
+  z-index: 1;
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.heading p,
+logo {
+  padding: 5%;
+}
+.logo {
+  height: 3vw;
+  width: 3vw;
+}
+
+.nav_links {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav_links li:hover {
+  font-weight: 510;
+  transform: translate(0, -2px);
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav_links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*body*/
+
+.body {
+  height: 120vh;
+}
+.login {
+  height: 120vh;
+  background-color: white;
+  background: rgb(34, 222, 255);
+  background: linear-gradient(
+    to right bottom,
+    rgb(199, 205, 255, 0.2),
+    rgba(255, 255, 255, 0.7)
+  );
+  backdrop-filter: blur(0.8rem);
+  width: 30%;
+  height: 70vh;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 2%;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .login {
+    width: 50%;
+  }
+}
+
+.login h2 {
+  margin: 20px;
+  color: #36286b;
+  font-weight: 780;
+  font-size: 24px;
+}
+#uname {
+  padding: 2px 8px;
+  margin: 4px;
+  font-size: 12px;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+#uname_label {
+  font-size: 18px;
+  font-family: "Roboto" sans-serif;
+}
+#pass {
+  padding: 2px 8px;
+  margin: 4px;
+  font-size: 12px;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+#pass_label {
+  font-size: 18px;
+  font-family: "Roboto" sans-serif;
+}
+
+#log {
+    padding: 3% 5px !important;
+    /* margin-top: 30px; */
+    /* margin-bottom: 10px; */
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #0070eb;
+    color: white;
+    font-weight: 700;
+    border-width: 0px;
+}
+
+#log:hover {
+  background-color: #0f83ff;
+}
+
+#noacc {
+  margin: 10px;
+  font-size: 12px;
+}
+
+#noacc a {
+  text-decoration: none;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  background: linear-gradient(
+    to right top,
+    rgb(223, 250, 255),
+    rgb(66, 1, 216)
+  );
+  position: absolute;
+}
+
+.circle1 {
+  height: 16rem;
+  width: 16rem;
+  top: 12%;
+  right: 20%;
+  border-radius: 8rem;
+  z-index: -1;
+}
+.circle2 {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7rem;
+  bottom: 2%;
+  left: 25%;
+  z-index: -1;
+}
+
+.circle3 {
+  background: linear-gradient(
+    to right top,
+    rgb(223, 250, 255),
+    rgb(78, 15, 224)
+  );
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  bottom: 22%;
+  left: 32%;
+  z-index: -2;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .circle1 {
+    top: 12%;
+    right: 8%;
+  }
+  .circle2 {
+    bottom: 2%;
+    left: 5%;
+  }
+  .circle3 {
+    bottom: 22%;
+    left: 22%;
+  }
+}
+/*footer*/
+
+.aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #ebe7e7;
+  height: 30vh;
+  padding: 20px 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+.aboutpara {
+  width: 50vw;
+  font-weight: 350;
+  font-size: 14px;
+}
+
+.abouthead {
+  font-size: 30px;
+  font-weight: 700;
+  width: 50vw;
+  padding-left: 300px;
+  padding-bottom: 50px;
+}
+
+.contactus {
+  background-color: #0070eb;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: 25vh;
+}
+
+.contact_top {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 50%;
+}
+
+.text {
+  padding: 15px;
+}
+
+.socialmed a img {
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.socialmed a img:hover {
+  transform: translate(0, -2px);
+}
+hr.footer_line {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border: 0.8px solid white;
+}
+.contact_bottom {
+  padding: 0 60px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.copyright {
+  font-size: 12px;
+}
+.userpol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.terms {
+  padding: 10px;
+}
+.terms a {
+  text-decoration: none;
+  color: white;
+}
+.terms a:hover {
+  text-decoration: underline;
+}
+.privacy {
+  padding: 10px;
+}
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+.privacy a:hover {
+  text-decoration: underline;
+}

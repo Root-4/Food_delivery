@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500 &display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+    .vanishlink{
+        display: none;
+    }
+
+
+}
+/*navigation bar*/
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #36286b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    height: 10vh;
+    z-index: 1;
+}
+
+.heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.heading p, logo {
+    padding: 2%;
+}
+.logo {
+    height: 4vw;
+    width: 4vw;
+}
+
+.nav_links {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav_links li:hover {
+    font-weight: 510;
+    transform: translate(0, -2px);
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* body*/
+.main_screen{
+    height: 90vw;
+}
+.con{
+    margin: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+}
+.container h2{
+    margin: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #36286b;
+}
+
+
+.food-menu-box{
+    width: 43%;
+    margin: 2%;
+    padding: 2%;
+    float: left;
+    background-color: #ebe7e7;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+}
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+} 
+.food-menu-desc h4{
+    color: #36286b;
+    font-size: 1.2rem;
+}
+.food-price{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}   
+.food-menu-img{
+    width: 20%;
+    float: left;
+}   
+
+.btn-primary{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.btn-primary:hover{
+    color: rgb(1, 16, 83);
+}
+
+
+
+/* footer*/
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #ebe7e7;
+    height: 30vh;
+    padding: 20px 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutpara {
+    width: 50%;
+    font-weight: 350;
+    font-size: 14px;
+
+}
+
+
+.abouthead {
+    font-size: 30px;
+    font-weight: 700;
+    width: 50%;
+    padding-left: 30%;
+}
+
+
+.contactus {
+    background-color: #0070eb;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    height: 25vh;
+}
+
+.contact_top {
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 50%;
+}
+
+.text {
+    padding: 15px;
+}
+
+.socialmed a img {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.socialmed a img:hover {
+    transform: translate(0, -2px);
+}
+hr.footer_line {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border: 0.8px solid white;
+
+}
+.contact_bottom {
+    padding: 0 60px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.copyright {
+    font-size: 12px;
+}
+.userpol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.terms {
+    padding: 10px;
+}
+.terms a{
+    text-decoration: none;
+    color: white;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
+.privacy {
+    padding: 10px;
+}
+.privacy a{
+    text-decoration: none;
+    color: white;
+}
+.privacy a:hover{
+    text-decoration: underline;
+}
